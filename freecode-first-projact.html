@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="freecode-first-project.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Al-safa Hospital</title>
+</head>
+<body class="body">
+    <div class="color"></div>
+    <h1>Al-Safa Hospital Survey
+    (Dr.Mahmod)
+    </h1>
+    <p id="description">made to improve your experince and make your voice heard</p>
+    <form id="survey-form" class="survey">
+        <fieldset class="presonal-info">
+            <label id="name-label" for="name">Name: <input type="text" id="name" name="name" required placeholder="Name"></label>
+            <label id="email-label" for="email">Email: <input type="text" id="email" name="email" required placeholder="abe@......" ></label>
+            <label id="number-label" for="number">Age(optinal): <input type="text" pattern="^(1[3-9]|[2-9][0-9]|1[01][0-9]|120)$" id="number" name="number" placeholder="13-120" > </label>
+            <label for="dropdown">Gender:
+            <select name="gender" id="dropdown">
+                <option value="">(choose one)</option>
+                <option value="male">Male</option>
+                <option value="female">female</option>
+            </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <figcaption>"Which type of clinic did you visit?"</figcaption>
+            <label for="Orthopedic-Clinic"><input id="Orthopedic-Clinic" type="checkbox" value="Orthopedic-Clinic">Orthopedic Clinic
+            </label>
+            <label  class="checkbox" for="Dental"><input type="checkbox" id="Dental" value="Dental">Dental Clinic</label>
+            <label class="checkbox" for="Pediatrics"><input type="checkbox" id="Pediatrics" value="Pediatrics">Pediatrics Clinic</label>
+            <label class="checkbox" for="General-Medicine"><input type="checkbox" id="General-Medicine" value="General-Medicine" checked>General Medicine Clinic</label>
+        </fieldset>
+        <fieldset>
+            <figcaption>How would you rate the overall quality of care you received?</figcaption>
+            <label class="inline" for="rating-Excellent"><input type="radio" id="rating-Excellent" name="rating">Excellent</label>
+            <label class="inline" for="rating-Good"><input type="radio" id="rating-Good" name="rating">Good</label>
+            <label class="inline" for="rating-Fair"><input type="radio" id="rating-Fair" name="rating" checked>Fair</label>
+            <label class="inline" for="rating-Poor"><input type="radio" id="rating-Poor" name="rating">Poor</label>
+        </fieldset>
+        <fieldset>
+            <figcaption>How easy was it to schedule your appointment?</figcaption>
+            <label for="Very-comfortable"><input type="radio" id="Very-comfortable" name="rating-comfortablilty">Very comfortable</label>
+            <label for="Comfortable"><input type="radio" id="Comfortable" name="rating-comfortablilty">Comfortable</label>
+            <label for="Neutral"><input type="radio" id="Neutral" name="rating-comfortablilty" checked>Neutral</label>
+            <label for="Uncomfortable"><input type="radio" id="Uncomfortable" name="rating-comfortablilty">Uncomfortable</label>
+            <label for="Very-uncomfortabl"><input type="radio" id="Very-uncomfortable" name="rating-comfortablilty">Very uncomfortable</label>
+        </fieldset>
+        <fieldset>
+            <figcaption>Was the waiting time to see the doctor reasonable?</figcaption>
+            <label for="reasonable"><input type="radio" id="reasonable" name="rating-waiting" value="reasonable" checked >Yes, it was reasonable </label>
+            <label for="long"><input type="radio" id="long" name="rating-waiting" value="long">No, it was too long </label>
+            <label for="short"><input type="radio" id="short" name="rating-waiting" value="short" >No, it was too short</label>
+            
+        </fieldset>
+        <fieldset>
+            <figcaption>when was the last time you visit us?</figcaption>
+            <section>
+                <label for="less" id="less-label"><input type="radio"  id="less" name="last-visit" value="less the a month">less the a month</label>
+                <label for="more" id="more-label"><input type="radio" id="more" name="last-visit" value="more the a month">more the a month</label>
+            </section>
+            <fieldset >
+                <label for="suggestion">suggestion or Complaints:<textarea name="suggestion" id="suggestion" placeholder="I would like to ......"></textarea ></label>
+            </fieldset>
+        </fieldset>
+        <input type="submit" name="submit" id="submit">
+    </form>
+    <footer><p><a href="http://" target="_blank" rel="noopener noreferrer">VIST OUR WEBSITE FOR MORE INFO</a></p></footer>
+</body>
+
+</html>
